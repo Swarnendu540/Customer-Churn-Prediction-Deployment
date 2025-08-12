@@ -1,0 +1,23 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Churn Prediction</title>
+</head>
+<body>
+    <h2>Customer Churn Prediction</h2>
+    <form action="/predict_form" method="post">
+        <label>Credit Score:</label><input type="number" name="CreditScore"><br>
+        <label>Geography:</label><input type="text" name="Geography" placeholder="France, Germany, Spain"><br>
+        <label>Gender:</label><input type="text" name="Gender" placeholder="Male or Female"><br>
+        <label>Age:</label><input type="number" name="Age"><br>
+        <label>Tenure:</label><input type="number" name="Tenure"><br>
+        <label>Balance:</label><input type="number" name="Balance"><br>
+        <label>Num of Products:</label><input type="number" name="NumOfProducts"><br>
+        <label>Has Credit Card (0 or 1):</label><input type="number" name="HasCrCard"><br>
+        <label>Is Active Member (0 or 1):</label><input type="number" name="IsActiveMember"><br>
+        <label>Estimated Salary:</label><input type="number" name="EstimatedSalary"><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
